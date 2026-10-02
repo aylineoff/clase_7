@@ -41,7 +41,6 @@
 
                         // location viene como "Ciudad, País": nos quedamos con lo que sigue después de la coma
                         const pais = u.location.split(", ").pop();
-
                         // 5) Según la clasificación, agregamos una fila (<tr>) al <tbody> que corresponde.
                         //    "+=" con innerHTML AGREGA la fila nueva sin borrar las anteriores.
                         if (esAmericana) {
@@ -70,7 +69,7 @@
             function bolitas(x) {
                 var visual = "";
                 for (let i = 0; i < x; i++) {
-                    visual += " ● ";
+                    visual += " ★ ";
                 }
                 return "<span>" + visual + "</span>";
             }
